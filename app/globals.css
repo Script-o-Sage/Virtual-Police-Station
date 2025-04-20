@@ -1,0 +1,198 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 267 77% 58%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 267 77% 58%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 267 77% 58%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 267 77% 58%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom styles for dark mode improvements */
+.dark .text-purple-700 {
+  color: hsl(267, 77%, 70%);
+}
+
+.dark .bg-purple-600 {
+  background-color: hsl(267, 77%, 58%);
+}
+
+.dark .hover\:bg-purple-700:hover {
+  background-color: hsl(267, 77%, 48%);
+}
+
+.dark .border-purple-600 {
+  border-color: hsl(267, 77%, 58%);
+}
+
+/* Improved contrast for text in dark mode */
+.dark .text-gray-600 {
+  color: hsl(240, 5%, 75%);
+}
+
+.dark .text-gray-500 {
+  color: hsl(240, 5%, 65%);
+}
+
+/* Better card and container visibility in dark mode */
+.dark .bg-white {
+  background-color: hsl(240, 10%, 10%);
+}
+
+.dark .bg-gray-50 {
+  background-color: hsl(240, 10%, 8%);
+}
+
+.dark .bg-purple-50 {
+  background-color: hsl(267, 30%, 10%);
+}
+
+.dark .bg-purple-100 {
+  background-color: hsl(267, 30%, 15%);
+}
+
+/* Animation optimizations */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Performance optimizations */
+.will-change-transform {
+  will-change: transform;
+}
+
+.will-change-opacity {
+  will-change: opacity;
+}
+
+.hardware-accelerated {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom animations */
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 5s ease-in-out infinite;
+}
+
+/* Loading spinner */
+.spinner {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  border-top-color: hsl(267, 77%, 58%);
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.dark .spinner {
+  border: 3px solid rgba(255, 255, 255, 0.1);
+  border-top-color: hsl(267, 77%, 70%);
+}
+
+/* Ensure text visibility in dark mode */
+.dark .text-purple-700 {
+  color: rgb(192, 132, 252);
+}
+
+.dark .text-purple-300 {
+  color: rgb(216, 180, 254);
+}
+
+/* Improve contrast for dark mode text */
+.dark {
+  color-scheme: dark;
+  --foreground: 210 40% 98%;
+}
