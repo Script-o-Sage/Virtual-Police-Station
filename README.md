@@ -1,80 +1,82 @@
-🛡️ Virtual Police Station
+<div align="center">
 
-A Web3-based FIR Filing & Case Tracking System | Hack4Bengal 2025 Finalist
+<h1>
+  🚨 Virtual Police Station 🚓  
+</h1>
+<h3>
+  <i>FIR Filing & Case Tracking Platform | Empowering Justice with Web3 + AI</i>
+</h3>
 
+<img src="https://readme-typing-svg.demolab.com/?lines=🚨+Virtual+Police+Station+%F0%9F%9A%93;FIR+Filing+%26+Case+Tracking+Platform+🔐;Empowering+Justice+with+Web3+%26+AI&font=Fira+Code&center=true&width=800&height=45&duration=4000&pause=1000" alt="Typing SVG" />
 
-⸻
+<br />
 
-🚀 Project Overview
+[![GitHub stars](https://img.shields.io/github/stars/Script-o-Sage/Virtual-Police-Station?style=for-the-badge&logo=github&color=brightgreen)](https://github.com/Script-o-Sage/Virtual-Police-Station/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/Script-o-Sage/Virtual-Police-Station?style=for-the-badge&logo=github)](https://github.com/Script-o-Sage/Virtual-Police-Station/network/members)
+[![GitHub last commit](https://img.shields.io/github/last-commit/Script-o-Sage/Virtual-Police-Station?style=for-the-badge&color=orange)](https://github.com/Script-o-Sage/Virtual-Police-Station/commits)
+[![Website](https://img.shields.io/badge/View%20Live-Demo-purple?style=for-the-badge&logo=vercel)](https://www.hackquest.io/projects/Virtual-Police-Station)
 
-Virtual Police Station is a secure, AI-powered, and blockchain-integrated platform designed to digitally transform the FIR (First Information Report) filing and case tracking process in India. Developed under the theme “Web3 & Digital Governance” during Hack4Bengal 2025, this solution empowers citizens—especially in remote and underserved areas—to seek justice transparently and efficiently.
+</div>
 
-🔗 Live Project: https://www.hackquest.io/projects/Virtual-Police-Station
-📂 GitHub Repo: https://github.com/Script-o-Sage/Virtual-Police-Station
+---
 
-⸻
+## 🧠 Project Overview
 
-🧠 Key Features
-	•	🗣️ AI-Powered FIR Filing – Natural language chatbot with NLP for easy report creation
-	•	🔍 Real-time Case Tracking – Check status, updates, and officer remarks anytime
-	•	🔐 Blockchain Transparency – Ethereum-based smart contracts for audit trails
-	•	🧾 Tamper-proof Evidence – Stored via IPFS & SHA-256 cryptographic hashing
-	•	🔐 Secure Access – Aadhaar OTP login, JWT sessions, and MFA authentication
-	•	🧑‍💼 Role-Based Dashboards – Tailored interfaces for citizens and police officials
+**Virtual Police Station** is a full-stack platform that leverages **Web3, AI, and Blockchain** to redefine FIR filing and case tracking. It empowers citizens—especially in underserved areas—by providing a secure, digital-first justice access system.
 
-⸻
+---
 
-🧱 Tech Stack
+## 🌟 Key Features
 
-Layer	Technology
-Frontend	HTML, CSS, JavaScript
-Backend	Python (Flask/Django)
-Database	MongoDB / SQL
-Authentication	JWT, Aadhaar OTP
-AI/NLP	OpenAI / Cohere
-Blockchain	Solidity (Ethereum), IPFS
-Hosting	Vercel, Firebase, AWS S3
+- 🤖 **AI Chatbot** for FIR drafting using OpenAI/Cohere
+- 🆔 **Aadhaar OTP simulation** & JWT-based secure login
+- 🔗 **Smart Contracts** for tracking & submission verification
+- 📦 **IPFS Snapshots** & **SHA-256** hashing for document integrity
+- 🧠 **NLP** for evidence classification & chatbot interaction
+- 📊 **Admin Dashboards** with case analytics & audit trails
+- 🔐 **AES-256 End-to-End Encryption** for all communication
+- 💻 Fully Responsive UI with smooth interactions
 
+---
 
+## 🧰 Tech Stack
 
-⸻
+| Frontend         | Backend        | Database      | Blockchain/Web3       | AI/NLP         | Security             |
+|------------------|----------------|---------------|------------------------|----------------|----------------------|
+| HTML, CSS, JS    | Flask (Python) | MongoDB / SQL | Solidity, Web3.py, IPFS | OpenAI, Cohere | JWT, AES-256, SHA-256 |
 
-🛠️ Setup Instructions
-	1.	Clone the repository
+---
+
+## 📸 Demo Preview
+
+<div align="center">
+  <img src="https://github.com/Script-o-Sage/Virtual-Police-Station/assets/demo-gif.gif" width="800" alt="Demo GIF" style="border-radius: 12px; box-shadow: 0 0 20px rgba(0,0,0,0.2);" />
+</div>
+
+---
+
+## 👨‍💻 Team Members
+
+| 👤 Name | 
+|--------|
+| **Abinash Roy** | Team Leader |
+| **MD Ashfahan Washi** | 
+| **Diya Dasgupta** | 
+| **Akash Maity** |
+
+---
+
+## 📢 Support Us on HackQuest!
+
+If you like our work, support us by voting on HackQuest 🚀  
+👉 [**Vote Now** 🔗](https://www.hackquest.io/projects/Virtual-Police-Station)
+
+---
+
+## 🛠️ Run Locally
+
+bash
 git clone https://github.com/Script-o-Sage/Virtual-Police-Station.git
-	2.	Set up your .env file with necessary API keys and DB config
-	3.	Install backend dependencies
+cd Virtual-Police-Station
 pip install -r requirements.txt
-	4.	Run backend server
-python app.py or flask run
-	5.	Launch frontend in browser or deploy with Vercel
-
-⸻
-
-🔐 Web3 & Security Highlights
-	•	✅ Ethereum Smart Contracts for FIR lifecycle automation
-	•	🔗 Distributed Ledger for verified and permanent data
-	•	📜 Immutable Audit Trail of every action
-	•	🧊 IPFS for tamper-proof evidence storage
-	•	🔐 End-to-End AES-256 Encryption + MFA & Role-based Access
-
-⸻
-
-🙌 Team Members – 
-Abinash Roy (Leader)
-Akash Maity
-MD Ashfahan Washi
-Diya DasGupta
-
-⸻
-
-📢 Support & Vote
-
-If you believe in technology for public good, support our mission by casting your vote:
-👉 Vote on HackQuest  https://www.hackquest.io/projects/Virtual-Police-Station
-
-⸻
-
-📜 License
-
-This project is licensed under the MIT License.
+python app.py
